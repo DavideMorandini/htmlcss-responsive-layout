@@ -21,6 +21,7 @@ div.row_nav {
     max-width: 1152px;
     width: 80%;
     height: auto;
+    padding: 0px 10px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -96,18 +97,24 @@ a.get_started {
     width: auto;
     height: auto;
     margin-left: 10px;
-    font-size: 30px;
-    display: none;
+    font-size: 20px;
+    display: none;  
 }
 
 
 
 /* main */
+/* First Section */
+.first_section {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
 div.row_main_up_and_down {
     border: 1px solid red;
     max-width: 1152px;
     width: 80%;
-    height: 500px; /* auto */
+    height: auto; 
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -116,39 +123,43 @@ div.row_main_up_and_down {
 div.col_first_sec {
     border: 1px solid blue;
     border-radius: 20px;
-    height: 400px; /* auto */
+    height: auto; 
     margin: 10px;
     background-color: #b5ddff;
 }
 
 div.col_double {
    width: calc(100% / 3 - 20px);
+   padding-top: 20px;
    flex-grow: 2;
    display: flex;
    flex-direction: row;
 }
 
 div.info {
-    border: 1px solid green;
+    border: 5px solid green;
     width: 50%;
-    height: 350px; /* auto */
+    height: auto; 
 }
 
 h3 {
     border: 1px solid green;
     color: #0e8bfd;
-    font-weight: 900;
     padding: 20px;
 }
 
+.info h3 {
+    padding-top: 0;
+}
+
 p.demo {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     line-height: 1.8;
     padding-left: 20px;
 }
 
 div.app_box {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 50%;
     height: auto;
     text-align: center;
@@ -158,22 +169,24 @@ div.app_box {
     background-color: #0084fd;
 }
 
+.fa-apple {
+    /* border: 1px solid green; */
+    margin: 0px 5px;
+}
+
 div.card_phone {
-    border: 5px solid green;
+    /* border: 5px solid green; */
     width: calc(100% - 50%);
     height: auto; 
     display: flex;
     flex-direction: row;
-}
-
-.fa-apple {
-    border: 1px solid green;
-    margin: 0px 5px;
+    justify-content: flex-start;
+    align-content: flex-end;
 }
 
 .phone_img {
     border: 1px solid yellow;
-    max-width: 100%;
+    max-width: 290px;
     object-fit: cover;
     padding-top: 50px;
 }
@@ -182,25 +195,169 @@ div.col_single {
     width: calc(100% / 3 - 20px);
 }
 
-div.clean_code {
+div.function {
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.fa-file {
+.fa-solid {
     font-size: 80px;
     color: #0084fd;
 }
 
-p.clean_code {
-    border: 1px solid green;
+p.function {
+    /* border: 1px solid green; */
     line-height: 1.8;
     padding: 20px;
     text-align: center;
 }
 
+
+/* Second Section */
+.second_section {
+    background-color: #9792e4;
+}
+
+div.row_main_second_sec {
+    border: 1px solid red;
+    max-width: 1152px;
+    width: 80%;
+    height: auto; /* auto */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.colonne {
+    border: 2px solid blue;
+    width: 30%; 
+    height: 800px; /* auto */
+    margin: 0px 30px;
+}
+
+div.card_immagine_1 {
+    border: 1px solid yellow;
+    width: 100%;
+    height: 400px; /* auto */
+}
+
+.prima_immagine, .seconda_immagine {
+    border: 1px solid violet;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.informazioni_colonna {
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+}
+
+.titolo_nero {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.col_planning {
+    border: 1px solid blue;
+    width: 30%; 
+    height: auto; /* auto */
+    padding: 20px 30px;
+    margin: 0px 30px;
+}
+
+div.pimg_2 {
+    border-radius: 20px;
+    background-color: white;
+}
+
+.planning_img {
+    border: 1px solid green;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+
+div.info_planning {
+    border: 3px solid violet;
+    width: auto;
+    height: auto;
+}
+
+.title_white {
+    font-size: 25px;
+    color: white;
+    padding: 30px 0px;
+}
+
+.para_white {
+    border: 1px solid green;
+    color: white;
+    line-height: 1.5;
+}
+
+.title_black {
+    color: black;
+    text-align: center;
+}
+
+.para_corsivo {
+    border: 1px solid green;
+    color: #969696;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+
+div.arrow_down {
+    width: 20%;
+    height: auto;
+    background-color: #9792e4;
+    border-radius: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-arrow-down {
+    font-size: 16px;
+    color: black;
+}
+
+
+
+    
 
 
 
