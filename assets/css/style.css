@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+
+
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -90,65 +96,18 @@ a.get_started {
     color: black;
 }
 
-.fa-bars {
-    border: 1px solid yellow;
+div.col_hidden {
+    /* border: 1px solid yellow; */
     width: auto;
     height: auto;
-    margin-left: 0.625rem;
-    font-size: 1.875rem;
-    filter: invert(1);
     display: none;  
 }
 
-@media screen and (max-width: 768px) {
-    div.col_right_header {
-        display: none;
-    }
-
-    .fa-bars {
-        display: inline-block;
-    }
-
-    
-
-
-
-
-
-
+.fa-bars {
+    margin-left: 0.625rem;
+    font-size: 1.875rem;
+    filter: invert(1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -192,7 +151,7 @@ div.info {
     height: auto; 
 }
 
-h3 {
+h3.scope {
     /* border: 1px solid green; */
     color: #0e8bfd;
     padding: 20px;
@@ -236,9 +195,10 @@ div.card_phone {
 
 .phone_img {
     /* border: 1px solid yellow; */
-    max-width: 18.125rem;
+    /* max-width: 18.125rem; */
+    max-width: 100%;
     object-fit: cover;
-    padding-top: 3.125rem;
+    padding-top: 1.875rem;
 }
 
 div.col_single {
@@ -264,6 +224,7 @@ p.function {
     padding: 1.25rem;
     text-align: center;
 }
+
 
 
 
@@ -413,14 +374,18 @@ div.profile {
 }
 
 .box_profile {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     width: 40%;
     height: auto;  
-    padding: 1.25rem 0rem 1.875rem 0.625rem;
+    padding: 1.25rem 0.625rem 1.875rem 0.625rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .person {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     width: 15.625rem;
     height: 15.625rem;
     object-fit: cover;
@@ -428,7 +393,7 @@ div.profile {
 }
 
 div.cite {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     width: 100%;
     height: auto;
     color: white;
@@ -438,7 +403,7 @@ div.cite {
     margin: 3.75rem 0rem;
 }
 
-span {
+span.name {
     display: block;
     text-transform: uppercase;
     font-weight: bold;
@@ -520,6 +485,7 @@ div.more {
 
 
 
+
 /* Fifth Section */
 .fifth_section {
     padding-bottom: 6.25rem;
@@ -577,6 +543,7 @@ div.card_elegant {
 .fa-quote-left {
     color:  #9893e5;
     position: absolute;
+    font-size: 3.75rem;
     left: 80%;
 	transform: translate(-80%, 0);	
 }
@@ -602,12 +569,14 @@ div.linkedin {
     padding: 0.3125rem;
     background-color: #9893e5;
     color: white;
+    text-align: center;
 }
 
 .fa-linkedin {
     /* border: 1px solid violet; */
     margin: 0rem 0.3125rem;
 }
+
 
 
 
@@ -634,6 +603,7 @@ div.col_final {
 }
 
 h4.title_get_started {
+    border: 1px solid blue;
     text-transform: uppercase;
     font-weight: normal;
     color: #cecdf2;
@@ -642,6 +612,8 @@ h4.title_get_started {
 }
 
 h3.simple {
+    text-align: center;
+    border: 1px solid blue;
     color: white;
     font-size: 2.1875rem;
 }
@@ -729,7 +701,245 @@ span.last_info {
     text-transform: none;
 }
 
+
+
+/* Media Query Tablet */
+@media screen and (max-width: 768px) {
+    div.col_right_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
     
+    ul {
+        display: none;
+    }
+
+    div.col_hidden {
+        display: block;
+    }
+
+    div.col_double {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.info {
+        width: 100%;
+        height: auto; 
+    }
+   
+    h3 {
+        text-align: left;
+    }
+
+    div.card_phone {
+        width: 50%;
+        height: auto; 
+    }
+
+    .phone_img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    
+    div.row_main_second_sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.colonne {
+        width: 100%; 
+        height: auto;
+        padding: 2rem 0rem;
+        margin: 0rem;
+    }
+
+    .titolo_bianco {
+        font-size: 2.5rem;
+    }
+
+    .col_destra {
+        align-self: start;
+    }
+
+    /* manca third section */
+
+    div.row_main_fourth_sec {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    div.col_calendar {
+        width: calc(100% / 2 - 0.625rem);
+    }
+
+    .fa-quote-left {
+        font-size: 2rem;
+    }    
+}
+
+
+@media screen and (max-width: 480px) {
+    div.col_right_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    ul {
+        display: none;
+    }
+
+    div.col_hidden {
+        display: block;
+    }
+    
+    div.row_main_up_and_down {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div.col_double {
+        width: calc(100% / 1 - 20px);
+        display: flex;
+        flex-direction: column;   
+    }
+
+    div.info {
+        width: 100%;
+        height: auto; 
+    }
+   
+    h3.scope {
+        text-align: center;
+    }
+
+    div.card_phone {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .phone_img {
+        max-width: 100%;
+        object-fit: cover;
+        padding-top: 0rem;
+    }
+
+    div.col_single {
+        width: calc(100% / 1 - 1.25rem);
+    }
+
+    div.row_main_third_sec {
+        margin-bottom: 3.75rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.profile {
+        border: 1px solid black;
+        width: 100%; 
+        height: auto; 
+        margin: 0.9375rem 0rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .box_profile {
+        width: 100%; 
+        height: auto; 
+        padding: 1.25rem 0.625rem 0.625rem 1.25remr;
+    }
+
+    div.cite {
+        width: 100%;
+        height: auto;
+        line-height: 2;
+        text-align: center;
+        margin: 2.5rem 0rem;
+    }
+
+    span.name {
+        padding: 0.625rem 0rem;
+    }
+
+    div.row_main_fourth_sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.col_calendar {
+        width: 100%;
+        height: auto;
+    }
+
+    div.row_main_fifth_sec {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    div.col_about_us_left {
+        width: 100%;
+        height: auto; 
+    }
+
+    div.col_about_us_right {
+        width: 100%;
+        height: auto; 
+    }
+
+    div.card_elegant {
+        margin-top: 3.125rem;
+    }
+
+    .man_elegant {
+        max-width: 60%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .fa-quote-left {
+        position: absolute;
+        font-size: 3.75rem;
+        left: 50%;
+        transform: translate(-50%, 0);	
+    }
+
+    q.i_help {
+        font-size: 1.5625rem;
+    }
+
+    div.linkedin {
+       text-align: center;
+    }
+
+    div.col_final {
+        border: 1px solid blue;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    div.button_get_started {
+        width: 80%;
+        height: auto;
+        padding: 1.25rem;
+    }
+    
+    div.col_footer_1, div.col_footer_2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+    
+
+
+
 
 
 
