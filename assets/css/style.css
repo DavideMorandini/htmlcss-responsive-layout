@@ -95,9 +95,61 @@ a.get_started {
     width: auto;
     height: auto;
     margin-left: 0.625rem;
-    font-size: 1.25rem;
+    font-size: 1.875rem;
+    filter: invert(1);
     display: none;  
 }
+
+@media screen and (max-width: 768px) {
+    div.col_right_header {
+        display: none;
+    }
+
+    .fa-bars {
+        display: inline-block;
+    }
+
+    
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
